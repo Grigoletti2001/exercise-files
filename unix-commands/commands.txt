@@ -1,0 +1,623 @@
+Last login: Mon Feb 24 17:01:31 on ttys003
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+joseph:hw1-unix-commands josephgrigolettiii$ touch commands.txt
+joseph:hw1-unix-commands josephgrigolettiii$ git clone https://git.generalassemb.ly/JGrigoletti/hw1-unix-commands.git
+fatal: unable to get current working directory: Operation not permitted
+joseph:hw1-unix-commands josephgrigolettiii$ cd 02
+-bash: cd: 02: No such file or directory
+joseph:hw1-unix-commands josephgrigolettiii$ cd ~
+joseph:~ josephgrigolettiii$ cd 02-24-Unix/
+joseph:02-24-Unix josephgrigolettiii$ git clone https://git.generalassemb.ly/JGrigoletti/hw1-unix-commands.git
+Cloning into 'hw1-unix-commands'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+joseph:02-24-Unix josephgrigolettiii$ cd h1
+-bash: cd: h1: No such file or directory
+joseph:02-24-Unix josephgrigolettiii$ cd ls
+-bash: cd: ls: No such file or directory
+joseph:02-24-Unix josephgrigolettiii$ ls
+class notes		labrynthe		site
+hello_world		nano.save		unix-notes.txt
+hw1-unix-commands	nano.save.1
+index.html		salamander
+joseph:02-24-Unix josephgrigolettiii$ cd hw1-unix-commands/
+joseph:hw1-unix-commands josephgrigolettiii$ mkdir app1
+joseph:hw1-unix-commands josephgrigolettiii$ mkdir app2
+joseph:hw1-unix-commands josephgrigolettiii$ mkdir app3
+joseph:hw1-unix-commands josephgrigolettiii$ mkdir app4
+joseph:hw1-unix-commands josephgrigolettiii$ mkdir app5
+joseph:hw1-unix-commands josephgrigolettiii$ desktop
+-bash: desktop: command not found
+joseph:hw1-unix-commands josephgrigolettiii$ cd desktop
+-bash: cd: desktop: No such file or directory
+joseph:hw1-unix-commands josephgrigolettiii$ cd .. 
+joseph:02-24-Unix josephgrigolettiii$ cd ../desktop
+joseph:desktop josephgrigolettiii$ ls
+css		index.html	js
+joseph:desktop josephgrigolettiii$ mv index.html /hw1-unix-commands/app1
+mv: rename index.html to /hw1-unix-commands/app1: No such file or directory
+joseph:desktop josephgrigolettiii$ tree
+.
+├── css
+│   └── style.css
+├── index.html
+└── js
+	└── app.js
+
+2 directories, 3 files
+joseph:desktop josephgrigolettiii$ cd 02
+-bash: cd: 02: No such file or directory
+joseph:desktop josephgrigolettiii$ cd ~
+joseph:~ josephgrigolettiii$ cd 02-24-Unix/
+joseph:02-24-Unix josephgrigolettiii$ ls
+class notes		labrynthe		site
+hello_world		nano.save		unix-notes.txt
+hw1-unix-commands	nano.save.1
+index.html		salamander
+joseph:02-24-Unix josephgrigolettiii$ tree
+.
+├── class\ notes
+├── hello_world
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── hw1-unix-commands ("within each directory touch index.html; touch app.js; mkdir folders as necessary and use cd and cd .. to change directory)
+│   ├── README.md
+│   ├── app1
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── index.html
+│   │   └── js
+│   │       └── app.js
+│   ├── app2
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── index.html
+│   │   └── js
+│   │       └── app.js
+│   ├── app3
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── index.html
+│   │   └── js
+│   │       └── app.js
+│   ├── app4
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── index.html
+│   │   └── js
+│   │       └── app.js
+│   ├── app5
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── index.html
+│   │   └── js
+│   │       └── app.js
+│   ├── commands.txt
+│   └── folder-structure.png
+├── index.html
+├── labrynthe
+│   ├── parlor
+│   │   ├── ballroom
+│   │   │   └── sarah_williams.txt
+│   │   └── dining_room
+│   └── stairway
+│       ├── escher_room
+│       └── throne_room
+│           └── goblin_king.txt
+├── nano.save
+├── nano.save.1
+├── salamander
+│   ├── file1.txt
+│   ├── file2.txt
+│   ├── file3.txt
+│   ├── sally.txt
+│   └── toys
+├── site
+│   ├── index.css
+│   ├── index.html
+│   └── index.js
+└── unix-notes.txt
+
+29 directories, 35 files
+joseph:02-24-Unix josephgrigolettiii$ cd hw1-unix-commands/
+joseph:hw1-unix-commands josephgrigolettiii$ tree
+.
+├── README.md
+├── app1
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app2
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app3
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app4
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app5
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── commands.txt
+└── folder-structure.png
+
+15 directories, 18 files
+
+
+Section 1: 
+Last login: Mon Feb 24 17:30:39 on ttys004
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+joseph:~ josephgrigolettiii$ ls
+02-24-Unix				Library
+Amazon Drive				Movies
+Applications				Music
+Applications (Parallels)		OneDrive
+Box					OneDrive - City Colleges of Chicago
+Calibre Library				Pictures
+Code					Public
+Creative Cloud Files			Roms
+Creative Cloud Files (archived) (1)	Virtual Machines.localized
+Desktop					WebstormProjects
+Documents				app
+Downloads				cymatics
+Drive					eclipse
+Dropbox					eclipse-workspace
+General Assembly			iCloud Drive (Archive)
+Github					lyndafiles
+Google Drive				nano.save
+Google Drive File Stream		node_modules
+IdeaProjects
+joseph:~ josephgrigolettiii$ cd 02-24-Unix/
+joseph:02-24-Unix josephgrigolettiii$ ls
+class notes		labrynthe		site
+hello_world		nano.save		unix-notes.txt
+hw1-unix-commands	nano.save.1
+index.html		salamander
+joseph:02-24-Unix josephgrigolettiii$ cd hw1-unix-commands/
+joseph:hw1-unix-commands josephgrigolettiii$ ls
+README.md		app3			commands.txt
+app1			app4			folder-structure.png
+app2			app5
+joseph:hw1-unix-commands josephgrigolettiii$ mkdir star_wars
+joseph:hw1-unix-commands josephgrigolettiii$ cd star_wars
+joseph:star_wars josephgrigolettiii$ touch commands.txt
+joseph:star_wars josephgrigolettiii$ man ls
+joseph:star_wars josephgrigolettiii$ 
+
+## Part I: Set the Scene
+
+Complete all work inside the `star_wars` folder.
+
+1. Create a directory called `death_star`, and make the following files inside of it: `darth_vader.txt`, `princess_leia.txt`, `storm_trooper.txt`
+
+2. In `galaxy_far_far_away`, make a directory named `tatooine` and create the following files in it: `luke.txt`, `ben_kenobi.txt`.
+
+3. Inside of `tatooine` make a directory called `millenium_falcon`, and in it create: `han_solo.txt`, `chewbaca.txt`
+Last login: Mon Feb 24 19:09:54 on ttys004
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+joseph:star_wars josephgrigolettiii$ mkdir death_star
+joseph:star_wars josephgrigolettiii$ cd death_star
+joseph:death_star josephgrigolettiii$ touch darth_vader.txt
+joseph:death_star josephgrigolettiii$ touch princess_leia.txt
+joseph:death_star josephgrigolettiii$ touch storm_trooper.txt
+joseph:death_star josephgrigolettiii$ cd ..
+joseph:star_wars josephgrigolettiii$ mkdir galaxy_far_far_away
+joseph:star_wars josephgrigolettiii$ cd galaxy_far_far_away/
+joseph:galaxy_far_far_away josephgrigolettiii$ mkdir tatooine
+joseph:galaxy_far_far_away josephgrigolettiii$ cd tatooine
+joseph:tatooine josephgrigolettiii$ touch luke.txt
+joseph:tatooine josephgrigolettiii$ touch ben_kenobi.txt
+joseph:tatooine josephgrigolettiii$ mkdir millenium_falcon
+joseph:tatooine josephgrigolettiii$ cd millenium_falcon/
+joseph:millenium_falcon josephgrigolettiii$ touch han_solo.txt
+joseph:millenium_falcon josephgrigolettiii$ touch chewbaca.txt
+joseph:millenium_falcon josephgrigolettiii$ 
+<br>
+
+## Part II: `mv` - rename
+
+* You can rename a file using the `mv` command. 
+
+4. Rename `ben_kenobi.txt` to `obi_wan.txt`.
+Last login: Mon Feb 24 19:15:34 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+joseph:millenium_falcon josephgrigolettiii$ cd ..
+joseph:tatooine josephgrigolettiii$ ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+joseph:tatooine josephgrigolettiii$ mv ben_knobi.txt obi_wan.txt
+mv: rename ben_knobi.txt to obi_wan.txt: No such file or directory
+joseph:tatooine josephgrigolettiii$ mv "ben_kenobi.txt" "obi_wan.txt"
+joseph:tatooine josephgrigolettiii$ 
+
+
+<br>
+
+## Part II: `cp` - copy
+
+* You can copy a file from one location to another using the `cp` command. (`man cp` for more info)
+
+- Directories can be sibling (parrell to each other) or can be parents (the folder that contains the folder you are in)
+
+5. Copy `storm_trooper.txt` from `death_star` to `tatooine`.
+Last login: Mon Feb 24 19:15:34 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+joseph:millenium_falcon josephgrigolettiii$ cd ..
+joseph:tatooine josephgrigolettiii$ ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+joseph:tatooine josephgrigolettiii$ mv ben_knobi.txt obi_wan.txt
+mv: rename ben_knobi.txt to obi_wan.txt: No such file or directory
+joseph:tatooine josephgrigolettiii$ mv "ben_kenobi.txt" "obi_wan.txt"
+joseph:tatooine josephgrigolettiii$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+joseph:tatooine josephgrigolettiii$ cd ..
+joseph:galaxy_far_far_away josephgrigolettiii$ ls
+tatooine
+joseph:galaxy_far_far_away josephgrigolettiii$ cd ..
+joseph:star_wars josephgrigolettiii$ ls
+commands copy.txt	death_star
+commands.txt		galaxy_far_far_away
+joseph:star_wars josephgrigolettiii$ cd death_star/
+joseph:death_star josephgrigolettiii$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+joseph:death_star josephgrigolettiii$ cp "storm_trooper.txt" tatooine
+joseph:death_star josephgrigolettiii$ mv "storm_trooper.txt" tatooine (not needed but moves the file there completely to avoid duplicates)
+<br>
+
+## Part IV: `mv` - move
+
+* You can use the `mv` command to move files from one location to another. `mv` can be used for renaming, moving, or both.  Run `man mv` to see the options—remember hit the `Q` key to get out of the manual page viewer.
+
+6. Move `luke.txt` and `obi_wan.txt` to the `millenium_falcon`.
+
+7. Move `millenium_falcon` out of `tatooine` and into `galaxy_far_far_away`.
+
+8. Move `millenium_falcon` into `death_star`.
+
+9. Move `princess_leia.txt` into the `millenium_falcon`.
+Last login: Mon Feb 24 19:19:51 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+joseph:death_star josephgrigolettiii$ ls
+darth_vader.txt		storm_trooper.txt
+princess_leia.txt	tatooine
+joseph:death_star josephgrigolettiii$ mv "storm_trooper.txt" tatooine
+joseph:death_star josephgrigolettiii$ cd ~
+joseph:~ josephgrigolettiii$ ls
+02-24-Unix				Library
+Amazon Drive				Movies
+Applications				Music
+Applications (Parallels)		OneDrive
+Box					OneDrive - City Colleges of Chicago
+Calibre Library				Pictures
+Code					Public
+Creative Cloud Files			Roms
+Creative Cloud Files (archived) (1)	Virtual Machines.localized
+Desktop					WebstormProjects
+Documents				app
+Downloads				cymatics
+Drive					eclipse
+Dropbox					eclipse-workspace
+General Assembly			iCloud Drive (Archive)
+Github					lyndafiles
+Google Drive				nano.save
+Google Drive File Stream		node_modules
+IdeaProjects
+joseph:~ josephgrigolettiii$ 02-24-Unix/
+-bash: 02-24-Unix/: is a directory
+joseph:~ josephgrigolettiii$ ls
+02-24-Unix				Library
+Amazon Drive				Movies
+Applications				Music
+Applications (Parallels)		OneDrive
+Box					OneDrive - City Colleges of Chicago
+Calibre Library				Pictures
+Code					Public
+Creative Cloud Files			Roms
+Creative Cloud Files (archived) (1)	Virtual Machines.localized
+Desktop					WebstormProjects
+Documents				app
+Downloads				cymatics
+Drive					eclipse
+Dropbox					eclipse-workspace
+General Assembly			iCloud Drive (Archive)
+Github					lyndafiles
+Google Drive				nano.save
+Google Drive File Stream		node_modules
+IdeaProjects
+joseph:~ josephgrigolettiii$ 02
+-bash: 02: command not found
+joseph:~ josephgrigolettiii$ 02-24-Unix/
+-bash: 02-24-Unix/: is a directory
+joseph:~ josephgrigolettiii$ ls
+02-24-Unix				Library
+Amazon Drive				Movies
+Applications				Music
+Applications (Parallels)		OneDrive
+Box					OneDrive - City Colleges of Chicago
+Calibre Library				Pictures
+Code					Public
+Creative Cloud Files			Roms
+Creative Cloud Files (archived) (1)	Virtual Machines.localized
+Desktop					WebstormProjects
+Documents				app
+Downloads				cymatics
+Drive					eclipse
+Dropbox					eclipse-workspace
+General Assembly			iCloud Drive (Archive)
+Github					lyndafiles
+Google Drive				nano.save
+Google Drive File Stream		node_modules
+IdeaProjects
+joseph:~ josephgrigolettiii$ cd 02-24-Unix/
+joseph:02-24-Unix josephgrigolettiii$ ls
+class notes		labrynthe		site
+hello_world		nano.save		unix-notes.txt
+hw1-unix-commands	nano.save.1
+index.html		salamander
+joseph:02-24-Unix josephgrigolettiii$ cd hw1
+-bash: cd: hw1: No such file or directory
+joseph:02-24-Unix josephgrigolettiii$ ls
+class notes		labrynthe		site
+hello_world		nano.save		unix-notes.txt
+hw1-unix-commands	nano.save.1
+index.html		salamander
+joseph:02-24-Unix josephgrigolettiii$ cd hw1-unix-commands/
+joseph:hw1-unix-commands josephgrigolettiii$ ls
+README.md		app3			folder-structure.png
+app1			app4			star_wars
+app2			app5
+joseph:hw1-unix-commands josephgrigolettiii$ cd star_wars/
+joseph:star_wars josephgrigolettiii$ ls
+commands copy.txt	death_star
+commands.txt		galaxy_far_far_away
+joseph:star_wars josephgrigolettiii$ cd galaxy_far_far_away/
+joseph:galaxy_far_far_away josephgrigolettiii$ ls
+tatooine
+joseph:galaxy_far_far_away josephgrigolettiii$ cd tattoine
+-bash: cd: tattoine: No such file or directory
+joseph:galaxy_far_far_away josephgrigolettiii$ cd tatooine/
+joseph:tatooine josephgrigolettiii$ ls
+luke.txt		obi_wan.txt
+millenium_falcon	tatooine
+joseph:tatooine josephgrigolettiii$ mv luke.txt cd../millenium_falcon
+mv: rename luke.txt to cd../millenium_falcon: No such file or directory
+joseph:tatooine josephgrigolettiii$ mv luke.txt /millenium_falcon
+mv: rename luke.txt to /millenium_falcon: Read-only file system
+joseph:tatooine josephgrigolettiii$ mv luke.txt
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+joseph:tatooine josephgrigolettiii$ mv luke.txt -millenium_falcon
+joseph:tatooine josephgrigolettiii$ mv obi_wan.txt -millenium_falcon
+joseph:tatooine josephgrigolettiii$ mv millenium_falcon -galaxy_far_far_away
+joseph:tatooine josephgrigolettiii$ mv millenium_falcon -death_star
+mv: rename millenium_falcon to -death_star: No such file or directory
+joseph:tatooine josephgrigolettiii$ mv millenium_falcon -death_star
+mv: rename millenium_falcon to -death_star: No such file or directory
+joseph:tatooine josephgrigolettiii$ cd ..
+joseph:galaxy_far_far_away josephgrigolettiii$ cd..
+-bash: cd..: command not found
+joseph:galaxy_far_far_away josephgrigolettiii$ cd ..
+joseph:star_wars josephgrigolettiii$ mv millenium_falcon -death_star
+mv: rename millenium_falcon to -death_star: No such file or directory
+joseph:star_wars josephgrigolettiii$ cd galaxy_far_far_away/
+joseph:galaxy_far_far_away josephgrigolettiii$ mkdir millenium_falcon
+joseph:galaxy_far_far_away josephgrigolettiii$ mv princess_leia.txt -millenium_falcon
+mv: rename princess_leia.txt to -millenium_falcon: No such file or directory
+joseph:galaxy_far_far_away josephgrigolettiii$ 
+
+<br>
+
+
+## Part V: `rm` - remove
+
+### ***BE CAREFUL WITH `rm`!!! THERE IS NO "TRASH" IN THE UNIX CLI. WHEN YOU DELETE SOMETHING IT IS GONE FOREVER!!!***
+
+You can use `rm` to delete a file.
+
+
+10. Delete `obi_wan.txt`.
+
+<br>
+
+## Part VI: all together
+
+11. In `galaxy_far_far_away`, make a directory called `yavin_4`.
+
+12. Move the `millenium_falcon` out of the `death_star` and into `yavin_4`.
+
+13. Make a directory in `yavin_4` called `x_wing`.
+
+14. Move `princess_leia.txt` to `yavin_4` and `luke.txt` to `x_wing`.
+
+15. Move the `millenium_falcon` and `x_wing` out of `yavin_4` and into `galaxy_far_far_away`.
+------
+
+16. In `death_star`, create directories for `tie_fighter_1`, `tie_fighter_2` and `tie_fighter_3`.
+
+17. Move `darth_vader.txt` into `tie_fighter_1`.
+
+18. Make a copy of `storm_trooper.txt` in both `tie_fighter_2` and `tie_fighter_3`.
+
+19. Move all of the `tie_fighters` out of the `death_star` and into `galaxy_far_far_away`.
+ast login: Mon Feb 24 19:15:34 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+joseph:millenium_falcon josephgrigolettiii$ cd ..
+joseph:tatooine josephgrigolettiii$ ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+joseph:tatooine josephgrigolettiii$ mv ben_knobi.txt obi_wan.txt
+mv: rename ben_knobi.txt to obi_wan.txt: No such file or directory
+joseph:tatooine josephgrigolettiii$ mv "ben_kenobi.txt" "obi_wan.txt"
+joseph:tatooine josephgrigolettiii$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+joseph:tatooine josephgrigolettiii$ cd ..
+joseph:galaxy_far_far_away josephgrigolettiii$ ls
+tatooine
+joseph:galaxy_far_far_away josephgrigolettiii$ cd ..
+joseph:star_wars josephgrigolettiii$ ls
+commands copy.txt	death_star
+commands.txt		galaxy_far_far_away
+joseph:star_wars josephgrigolettiii$ cd death_star/
+joseph:death_star josephgrigolettiii$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+joseph:death_star josephgrigolettiii$ cp "storm_trooper.txt" tatooine
+<br>
+
+## Part VII: `rm -r`: remove directories and everything they contain
+
+***BE CAREFUL WITH `rm`!!! THERE IS NO TRASH CAN IN THE UNIX CLI. WHEN YOU DELETE SOMETHING IT IS GONE FOREVER***
+
+Before you hit enter, make sure are deleting the right thing, or you could accidentally delete the contents of your computer (it has happened).
+
+This command will not typically ask you if you "really want to delete." It will just delete.
+joseph:galaxy_far_far_away josephgrigolettiii$ ls
+millenium_falcon	tatooine
+joseph:galaxy_far_far_away josephgrigolettiii$ cd tatooine/
+joseph:tatooine josephgrigolettiii$ ls
+-galaxy_far_far_away	tatooine
+joseph:tatooine josephgrigolettiii$ touch obi_wan.txt
+joseph:tatooine josephgrigolettiii$ rm "obi_wan.txt"
+joseph:tatooine josephgrigolettiii$ ls
+-galaxy_far_far_away	tatooine
+joseph:tatooine josephgrigolettiii$ 
+
+20. Remove `tie_fighter_2` and `tie_fighter_3`.
+rm -r tie_fighter_2` and `tie_fighter_3`.
+
+
+## Part VIII:
+
+21. Touch a file in `x_wing` called `the_force.txt`.
+
+22. Destroy the `death_star` and anyone inside of it.
+
+23. Return `x_wing` and the `millenium_falcon` to `yavin_4`.
+
+joseph:death_star josephgrigolettiii$ cd ..
+joseph:star_wars josephgrigolettiii$ cd x_wing
+joseph:star_wars josephgrigolettiii$ cd x_
+-bash: cd: x_: No such file or directory
+joseph:star_wars josephgrigolettiii$ cd galaxy_far_far_away/
+joseph:galaxy_far_far_away josephgrigolettiii$ cd x_
+joseph:galaxy_far_far_away josephgrigolettiii$ cd x_wing
+joseph:x_wing josephgrigolettiii$ touch the_force.txt
+joseph:x_wing josephgrigolettiii$ rm -r deathstar
+joseph:x_wing josephgrigolettiii$ mv x_wing yavin_4
+joseph:x_wing josephgrigolettiii$ mv millenium_falcon yavin_4
+joseph:x_wing josephgrigolettiii$ 
+### Celebrate. You've reached the end of section 1 :)
+
+<br>
+<hr>
+
+# :red_circle: Commit and push your updated code:
+
+"Add" your changes (prepare them to be "committed"):
+```bash
+$ git add -A
+```
+
+"Commit" your changes—any time you make a commit, you can always restore the files in the repo to that point:
+```bash
+$ git commit -m "Completed homework assignment"
+```
+
+"Push" your commits to github:
+```bash
+$ git push origin master
+
+
+
+joseph:hw1-unix-commands josephgrigolettiii$ tree
+.
+├── README.md
+├── app1
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app2
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app3
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app4
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── app5
+│   ├── css
+│   │   └── style.css
+│   ├── index.html
+│   └── js
+│       └── app.js
+├── commands.txt
+├── folder-structure.png
+└── star_wars
+    └── galaxy_far_far_away
+        ├── tatooine
+        │   └── storm_trooper.txt
+        ├── tie
+        │   └── tie_fighter1
+        │       └── darth_vader.txt
+        └── yavin_4
+            ├── millenium_falcon
+            │   ├── chewbaca.txt
+            │   ├── han_solo.txt
+            │   └── princess_leia.txt
+            └── x_wing
+                ├── luke.txt
+                └── the_force.txt
+
+23 directories, 25 files
+joseph:hw1-unix-commands josephgrigolettiii$ 
